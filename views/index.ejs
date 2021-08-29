@@ -1,0 +1,11 @@
+
+<% articles.forEach(article => { %>
+    <div class="card" style="width: 18rem;">
+        <img src="<%- article.urlToImage %> " class="card-img-top" alt="Sorry Image Not Found">
+        <div class="card-body">
+          <h5 class="card-title"><%= cutExtra(article.title) %> </h5>
+          <p class="card-text"><%- cutExtra(article.description) %></p>
+          <a href="<%- article.url  %> " class="btn btn-outline-primary">Read More</a>
+        </div>
+      </div>
+<% }) %>
